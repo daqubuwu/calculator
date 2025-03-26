@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { calculate } from './calculator';
+import { APP_VERSION } from './versions';
 
 const App: React.FC = () => {
+    console.log(`App versions: ${APP_VERSION}`);
     const [expression, setExpression] = useState('');
     const [result, setResult] = useState('');
     const [error, setError] = useState('');
